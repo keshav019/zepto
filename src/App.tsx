@@ -64,6 +64,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      <h3 style={{textAlign:"center",marginBottom:"20px"}}>User Select</h3>
       <div className="input-container">
         {chips.map((chip) => (
           <Chip key={chip.id} item={chip} onRemove={() => removeChip(chip)} highlightedItem={highlightedItem} />
